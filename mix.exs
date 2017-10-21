@@ -20,7 +20,7 @@ defmodule Oso.Mixfile do
   def application do
     [
       mod: {Oso.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :httpoison]
     ]
   end
 
@@ -37,6 +37,7 @@ defmodule Oso.Mixfile do
       {:phoenix_pubsub, "~> 1.0"},
       {:phoenix_ecto, "~> 3.2"},
       {:postgrex, ">= 0.0.0"},
+      {:httpoison, "~> 0.13"},
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
