@@ -12,6 +12,7 @@ defmodule Oso.Application do
       supervisor(Oso.Repo, []),
       # Start the endpoint when the application starts
       supervisor(OsoWeb.Endpoint, []),
+      supervisor(Oso.Presence, []),
       # Start your own worker by calling: Oso.Worker.start_link(arg1, arg2, arg3)
       # worker(Oso.Worker, [arg1, arg2, arg3]),
     ]
