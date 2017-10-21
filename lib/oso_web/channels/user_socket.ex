@@ -3,7 +3,9 @@ defmodule OsoWeb.UserSocket do
 
   ## Channels
   # channel "room:*", OsoWeb.RoomChannel
-  channel "search:*", OsoWeb.SearchChannel
+  channel "chat:*", OsoWeb.SearchChannel
+  channel "search:*", OsoWeb.ChatChannel
+
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
   # transport :longpoll, Phoenix.Transports.LongPoll

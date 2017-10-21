@@ -46,7 +46,7 @@ let render = (presences) => {
 }
 
 // Channels
-let room = socket.channel("search:lobby", {})
+let room = socket.channel("chat:lobby", {})
 room.on("presence_state", state => {
   presences = Presence.syncState(presences, state)
   render(presences)
