@@ -13,6 +13,9 @@ defmodule Oso.Application do
       # Start the endpoint when the application starts
       supervisor(OsoWeb.Endpoint, []),
       supervisor(Oso.Presence, []),
+      worker(Cachex, [:cache, [default_ttl: :timer.hours(12),
+                               limit: %Cachex.Limit{ limit: 1_000_000,
+                               policy: Cachex.Policy.LRW, reclaim: 0.001 } ]]),
       # Start your own worker by calling: Oso.Worker.start_link(arg1, arg2, arg3)
       # worker(Oso.Worker, [arg1, arg2, arg3]),
     ]

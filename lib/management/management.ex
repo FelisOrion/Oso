@@ -15,4 +15,11 @@ defmodule Oso.Management do
     |> Poison.decode!
     |> Api.decoder
   end
+
+  def generate_tags(list) do
+    list
+    |> Enum.map(fn({key, val})-> if key == :tag, do: val end)
+    |> Enum.reduce("", fn(x, acc)-> if x != nil, do: acc <> x <> ",", else: acc <> "" end)
+    |> (fn(part <> ",") -> part end).()
+  end
 end

@@ -2,6 +2,7 @@ defmodule OsoWeb.SearchChannel do
   use OsoWeb, :channel
 
   alias Oso.Presence
+  alias Oso.Cache
 
   def join("search:chat", _, socket) do
     send self(), :after_join_chat
@@ -14,10 +15,11 @@ defmodule OsoWeb.SearchChannel do
   end
 
   def handle_info(:after_join_chat, socket) do
-    Presence.track(socket, socket.assigns.user, %{
+    {:ok, pid} = Presence.track(socket, socket.assigns.user, %{
       user: "Anonimo",
       timestamp: :os.system_time(:millisecond)
     })
+    Cache.update(:cache, pid, [])
     push socket, "presence_state", Presence.list(socket)
     {:noreply, socket}
   end
@@ -32,13 +34,22 @@ defmodule OsoWeb.SearchChannel do
   end
 
   def handle_info(:after_join_ai, socket) do
-    # push socket, "ai_res", Presence.list(socket)
+    
+    {:noreply, socket}
+  end
+
+  def handle_in("tag:new", tag, socket) do
+    broadcast! socket, "tag:new", %{
+      user: socket.assigns.user,
+      tag:
+      timestamp: :os.system_time(:millisecond)
+    }
     {:noreply, socket}
   end
 
   # Channels can be used in a request/response fashion
   # by sending replies to requests from the client
-  def handle_in("ping", payload, socket) do
+  def handle_in("tag", tag, socket) do
     {:reply, {:ok, payload}, socket}
   end
 
