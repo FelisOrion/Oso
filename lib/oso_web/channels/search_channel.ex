@@ -16,7 +16,7 @@ defmodule OsoWeb.SearchChannel do
 
   def handle_info(:after_join_chat, socket) do
     {:ok, pid} = Presence.track(socket, socket.assigns.user, %{
-      user: "Anonimo",
+      user: socket.assigns.user,
       timestamp: :os.system_time(:millisecond)
     })
     Cache.update(pid, [])
