@@ -40,16 +40,17 @@
 
 
     ai.on("shout", paylaod => {
-      console.log(paylaod)
+      console.log('shout',paylaod)
     })
 
     chat.on("presence_state", state => {
-        console.log('',state);
+        console.log('presence_state',state);
       presences = Presence.syncState(presences, state)
       render(presences)
     })
 
     chat.on("presence_diff", diff => {
+        console.log("presence_diff", diff);
       presences = Presence.syncDiff(presences, diff)
       render(presences)
     })
@@ -57,19 +58,13 @@
     chat.join()
 
     // Chat
-
-    console.log('CIAO');
-
     window.onload = function() {
         let messageInput = document.getElementById("NewMessage");
         messageInput.addEventListener("keypress", (e) => {
-            console.log('TET');
           if (e.keyCode == 13 && messageInput.value != "") {
              var user = document.getElementById("UserData").innerText;
 
             chat.push("message:new", messageInput.value + '§' + user);
-
-            console.log('TET');
 
             messageInput.value = "";
           }
@@ -80,7 +75,7 @@
     let renderMessage = (message) => {
         var res = message.body.split('§');
 
-        console.log(res);
+        console.log('MessageList', res);
 
         $('#MessageList').append('<p><small style="color:black;font-size:10px">'+res[1]+'</small><br />'+res[0]  +'</p>');
     }
