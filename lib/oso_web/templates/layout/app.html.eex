@@ -655,7 +655,7 @@ function expandCommentDescription(action, commentId) {
                         <div>
                             <p id="User"></p>
                             <p id="UserList"></p>
-                            <div id="MessageList" style="width:100%">
+                            <div id="MessageList" style="width: 280px;position: fixed;height: 300px;z-index: 9999;color: black;overflow: scroll;">
 
                             </div>
                         </div>
