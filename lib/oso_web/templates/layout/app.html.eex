@@ -617,7 +617,8 @@ function expandCommentDescription(action, commentId) {
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkFK3W-ZpF_0n41TOA-6Shz749WsoqdqY&amp;libraries=places"></script>
 
-	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://test.ognisportoltre.it/common/js/widgets/common.js?v=2017092512" src="https://test.ognisportoltre.it/common/js/widgets/common.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/main" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/main.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="cookie" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.cookie.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/core/controller/TamTamyWidgetsController" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/core/controller/TamTamyWidgetsController.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="cookiecuttr" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.cookiecuttr.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/util/Utils" src="https://test.ognisportoltre.it/common/js/widgets/common/util/Utils.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/core/widget/Widget" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/core/widget/Widget.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/util/HandlebarsDispatcher" src="https://test.ognisportoltre.it/common/js/widgets/common/util/HandlebarsDispatcher.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="handlebars-intl" src="https://test.ognisportoltre.it/common/js/widgets/../handlebars/intl/handlebars-intl.min.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.elastic" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.elastic.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="caret" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.caret.min.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="https://test.ognisportoltre.it/common/js/widgets/../lib/underscore-min.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/util/HandlebarsHelpers" src="https://test.ognisportoltre.it/common/js/widgets/common/util/HandlebarsHelpers.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/util/HandlebarsMapper" src="https://test.ognisportoltre.it/common/js/widgets/common/util/HandlebarsMapper.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="handlebars-intl-tranlsations" src="https://test.ognisportoltre.it/common/js/widgets/../handlebars/intl/widgetTranslations/WidgetTranslations_it_IT.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="handlebars-intl-language" src="https://test.ognisportoltre.it/common/js/widgets/../handlebars/intl/locale-data/it.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.mentionsInput" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.mentionsInput.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="https://test.ognisportoltre.it/common/js/widgets/../lib/moment-with-locales.min.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/core/widget/MicrophoneWidget" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/core/widget/MicrophoneWidget.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/core/widget/OsoUserTabsWidget" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/core/widget/OsoUserTabsWidget.js?v=2017092512"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/10/intl/it_ALL/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/10/intl/it_ALL/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/10/intl/it_ALL/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttps%3A%2F%2Ftest.ognisportoltre.it%2Flimitless-hack&amp;4sAIzaSyAkFK3W-ZpF_0n41TOA-6Shz749WsoqdqY&amp;callback=_xdc_._251olx&amp;token=81586"></script></head>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://test.ognisportoltre.it/common/js/widgets/common.js?v=2017092512" src="https://test.ognisportoltre.it/common/js/widgets/common.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/main" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/main.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="cookie" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.cookie.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/core/controller/TamTamyWidgetsController" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/core/controller/TamTamyWidgetsController.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="cookiecuttr" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.cookiecuttr.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/util/Utils" src="https://test.ognisportoltre.it/common/js/widgets/common/util/Utils.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/core/widget/Widget" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/core/widget/Widget.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/util/HandlebarsDispatcher" src="https://test.ognisportoltre.it/common/js/widgets/common/util/HandlebarsDispatcher.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="handlebars-intl" src="https://test.ognisportoltre.it/common/js/widgets/../handlebars/intl/handlebars-intl.min.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.elastic" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.elastic.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="caret" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.caret.min.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="https://test.ognisportoltre.it/common/js/widgets/../lib/underscore-min.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/util/HandlebarsHelpers" src="https://test.ognisportoltre.it/common/js/widgets/common/util/HandlebarsHelpers.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/util/HandlebarsMapper" src="https://test.ognisportoltre.it/common/js/widgets/common/util/HandlebarsMapper.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="handlebars-intl-tranlsations" src="https://test.ognisportoltre.it/common/js/widgets/../handlebars/intl/widgetTranslations/WidgetTranslations_it_IT.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="handlebars-intl-language" src="https://test.ognisportoltre.it/common/js/widgets/../handlebars/intl/locale-data/it.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.mentionsInput" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.mentionsInput.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="https://test.ognisportoltre.it/common/js/widgets/../lib/moment-with-locales.min.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/core/widget/MicrophoneWidget" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/core/widget/MicrophoneWidget.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/core/widget/OsoUserTabsWidget" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/core/widget/OsoUserTabsWidget.js?v=2017092512"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/10/intl/it_ALL/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/10/intl/it_ALL/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/10/intl/it_ALL/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttps%3A%2F%2Ftest.ognisportoltre.it%2Flimitless-hack&amp;4sAIzaSyAkFK3W-ZpF_0n41TOA-6Shz749WsoqdqY&amp;callback=_xdc_._251olx&amp;token=81586"></script>
+
   </head>
 
   <body>
@@ -629,6 +630,82 @@ function expandCommentDescription(action, commentId) {
         <%= render @view_module, @view_template, assigns %>
       </main>
 
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <div class="helloTEST">
+      <div class="fixed-action-btn horizontal click-to-toggle">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+          <li>
+              <a class="btn-floating red tooltipped" data-tooltip="I am a tooltip" data-position="top" data-delay="50">
+                  <i class="material-icons">insert_chart</i>
+              </a>
+          </li>
+          <li>
+              <a class="btn-floating yellow darken-1 tooltipped" data-tooltip="I am a tooltip" data-position="top" data-delay="50">
+                  <i class="material-icons">format_quote</i>
+              </a>
+          </li>
+          <li>
+              <div style="position:relative">
+                  <div class="HelloOSO">
+                        <div>
+                            <p id="User"></p>
+                            <p id="UserList"></p>
+                            <div id="MessageList" style="width:100%">
+
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-top:316px;border-bottom-right-radius:16px;border-bottom-left-radius:16px;">
+                            <input name="name" class="form-control" id="NewMessage" placeholder="Messaggio" data-rule="minlen:4" data-msg="Please enter at least 4 chars" type="text">
+                        </div>
+                  </div>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <style>
+
+    div.HelloOSO {
+        position:absolute;
+        bottom:62px;
+        right:-70px;
+        background-color:white;
+        height:360px;
+        width:300px;
+        border-radius: 6px;
+        box-shadow: 0px 0px 2px 2px rgba(50, 50, 50, 0.55);
+        opacity: 0.90;
+        z-index: 10000;
+    }
+
+    </style>
+
+
+    <script src="<%= static_path(@conn, "/js/app.js") %>" defer></script>
+
   </body>
 </html>
+
+
+<!--<div class="row">
+  <div class="col-md-12 alert alert-info">
+    Hello, <span id="User"><%= @conn.params["user"] %></span>!
+  </div>
+  <div class="col-md-8">
+    <h2>Messages</h2>
+	    <ul id="MessageList" class="list-unstyled" style="height: 300px; border: 1px solid #ccc; overflow-y: auto; padding: 20px"></ul>
+    <input type="text" id="NewMessage" placeholder="Type and press enter..." class="form-control">
+  </div>
+  <div  class="col-md-4">
+    <h2>Who’s Online</h2>
+    <ul id="UserList" class="list-unstyled">
+      <li>Loading online users...</li>
+    </ul>
+  </div>
+</div>!-->

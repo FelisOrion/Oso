@@ -2,7 +2,7 @@
     import {Socket, Presence} from "phoenix"
 
     // Socket
-    let user = document.getElementById("User").innerText
+    let user = document.getElementById("User").innerText // hello
     let socket = new Socket("/socket", {params: {user: user}})
     socket.connect()
 
@@ -54,24 +54,26 @@
     chat.join()
 
     // Chat
-    let messageInput = document.getElementById("NewMessage")
-    messageInput.addEventListener("keypress", (e) => {
-      if (e.keyCode == 13 && messageInput.value != "") {
-        chat.push("message:new", messageInput.value)
-        messageInput.value = ""
-      }
-    })
+
+    console.log('CIAO');
+
+    window.onload = function() {
+        let messageInput = document.getElementById("NewMessage");
+        messageInput.addEventListener("keypress", (e) => {
+            console.log('TET');
+          if (e.keyCode == 13 && messageInput.value != "") {
+            chat.push("message:new", messageInput.value);
+
+            console.log('TET');
+
+            messageInput.value = "";
+          }
+      });
+    };
 
     let messageList = document.getElementById("MessageList")
     let renderMessage = (message) => {
-      let messageElement = document.createElement("li")
-      messageElement.innerHTML = `
-        <b>${message.user}</b>
-        <i>${formatTimestamp(message.timestamp)}</i>
-        <p>${message.body}</p>
-      `
-      messageList.appendChild(messageElement)
-      messageList.scrollTop = messageList.scrollHeight;
+        $('#MessageList').append('<p>'+message.body  +'</p>');
     }
 
     chat.on("message:new", message => renderMessage(message))
