@@ -22,6 +22,8 @@
 
     let userList = document.getElementById("UserList")
     let render = (presences) => {
+        console.log(presences);
+
       userList.innerHTML = Presence.list(presences, listBy)
         .map(presence => `
           <li>
@@ -42,6 +44,7 @@
     })
 
     chat.on("presence_state", state => {
+        console.log('',state);
       presences = Presence.syncState(presences, state)
       render(presences)
     })
@@ -62,7 +65,9 @@
         messageInput.addEventListener("keypress", (e) => {
             console.log('TET');
           if (e.keyCode == 13 && messageInput.value != "") {
-            chat.push("message:new", messageInput.value);
+             var user = document.getElementById("UserData").innerText;
+
+            chat.push("message:new", messageInput.value + '§' + user);
 
             console.log('TET');
 
@@ -73,7 +78,11 @@
 
     let messageList = document.getElementById("MessageList")
     let renderMessage = (message) => {
-        $('#MessageList').append('<p>'+message.body  +'</p>');
+        var res = message.body.split('§');
+
+        console.log(res);
+
+        $('#MessageList').append('<p><small style="color:black;font-size:10px">'+res[1]+'</small><br />'+res[0]  +'</p>');
     }
 
     chat.on("message:new", message => renderMessage(message))
