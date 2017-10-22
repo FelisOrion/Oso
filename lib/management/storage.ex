@@ -11,6 +11,6 @@ defmodule Oso.Storage do
 
   def put(key, data) do
     Agent.update(__MODULE__, fn(state) ->
-      Map.put(state, key, [data | state.key])
+      Map.put(state, key, [data | state.key]) end)
   end
 end

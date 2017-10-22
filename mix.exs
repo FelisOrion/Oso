@@ -40,6 +40,7 @@ defmodule Oso.Mixfile do
       {:httpoison, "~> 0.13"},
       {:phoenix_html, "~> 2.10"},
       {:cachex, "~> 2.1"},
+      {:cors_plug, "~> 1.2"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"}

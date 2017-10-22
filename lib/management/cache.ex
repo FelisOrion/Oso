@@ -12,10 +12,8 @@ defmodule Oso.Cache do
     case Cachex.get(:cache, pid) do
       {:missing, nil } -> #se non trova setta
           Cachex.set(:cache, pid, value)
-          {:ok, list}
       {:ok, list} -> #altrimenti aggiorna
           Cachex.update(:cache, pid, [value | list])
-          {:ok, [value | list]}
     end
   end
 

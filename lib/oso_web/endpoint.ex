@@ -38,6 +38,8 @@ defmodule OsoWeb.Endpoint do
     key: "_oso_key",
     signing_salt: "Wk8XQZrA"
 
+
+  plug CORSPlug
   plug OsoWeb.Router
 
   @doc """

@@ -19,7 +19,7 @@ defmodule OsoWeb.SearchChannel do
       user: "Anonimo",
       timestamp: :os.system_time(:millisecond)
     })
-    Cache.update(:cache, pid, [])
+    Cache.update(pid, [])
     push socket, "presence_state", Presence.list(socket)
     {:noreply, socket}
   end
@@ -34,23 +34,13 @@ defmodule OsoWeb.SearchChannel do
   end
 
   def handle_info(:after_join_ai, socket) do
-    
+
     {:noreply, socket}
   end
 
   def handle_in("tag:new", tag, socket) do
-    broadcast! socket, "tag:new", %{
-      user: socket.assigns.user,
-      tag:
-      timestamp: :os.system_time(:millisecond)
-    }
-    {:noreply, socket}
-  end
 
-  # Channels can be used in a request/response fashion
-  # by sending replies to requests from the client
-  def handle_in("tag", tag, socket) do
-    {:reply, {:ok, payload}, socket}
+    {:noreply, socket}
   end
 
   # It is also common to receive messages from the client and
