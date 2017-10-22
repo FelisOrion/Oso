@@ -7,29 +7,626 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello Oso!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <head><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style>
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="robots" content="index, follow">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="Ogni Sport Oltre">
+<meta name="twitter:domain" content="https://test.ognisportoltre.it">
+<meta name="theme-color" content="#715d80">
+
+
+
+		<title>
+			OgniSportOltre - LIMITLESS HACK - Milano, 21-22 ottobre | Ogni Sport Oltre
+		</title>
+		<meta property="og:title" content="OgniSportOltre - LIMITLESS HACK - Milano, 21-22 ottobre">
+		<meta name="twitter:title" content="OgniSportOltre - LIMITLESS HACK - Milano, 21-22 ottobre">
+		<meta itemprop="name" content="OgniSportOltre - LIMITLESS HACK - Milano, 21-22 ottobre">
+
+
+
+		<meta name="description" content="Limitless Hack si rivolge a startupper, sviluppatori, esperti di UX, designer web e mobile, appassionati di comunicazione, new media e digital marketing, che amano mettersi in gioco e trovare soluzioni che incidano in modo positivo sulla società.">
+		<meta property="og:description" content="Limitless Hack si rivolge a startupper, sviluppatori, esperti di UX, designer web e mobile, appassionati di comunicazione, new media e digital marketing, che amano mettersi in gioco e trovare soluzioni che incidano in modo positivo sulla società.">
+		<meta name="twitter:description" content="Limitless Hack si rivolge a startupper, sviluppatori, esperti di UX, designer web e mobile, appassionati di comunicazione, new media e digital marketing, che amano mettersi in gioco e trovare soluzioni che incidano in modo positivo sulla società.">
+		<meta itemprop="description" content="Limitless Hack si rivolge a startupper, sviluppatori, esperti di UX, designer web e mobile, appassionati di comunicazione, new media e digital marketing, che amano mettersi in gioco e trovare soluzioni che incidano in modo positivo sulla società.">
+
+		<meta name="keywords" content="">
+
+	<meta property="og:url" content="https://test.ognisportoltre.it/limitless-hack">
+
+
+		<meta name="og:image" content="https://test.ognisportoltre.it/skins/oso/graphic/hack-banner.jpg">
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://test.ognisportoltre.it/css/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://test.ognisportoltre.it/css/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://test.ognisportoltre.it/css/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://test.ognisportoltre.it/css/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://test.ognisportoltre.it/css/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://test.ognisportoltre.it/css/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://test.ognisportoltre.it/css/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://test.ognisportoltre.it/css/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://test.ognisportoltre.it/css/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://test.ognisportoltre.it/css/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://test.ognisportoltre.it/css/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://test.ognisportoltre.it/css/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://test.ognisportoltre.it/css/favicon/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://test.ognisportoltre.it/css/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<link rel="alternate" type="application/rss+xml" title="TamTamy Contents Feed" href="https://test.ognisportoltre.it/rss/rss.action">
+
+<link rel="alternate" type="application/rss+xml" title="TamTamy Comments Feed" href="https://test.ognisportoltre.it/rss/comments.action">
+
+	<link rel="stylesheet" id="skinStyle" href="https://test.ognisportoltre.it/skins/oso/css/skin.css?v=2017092512" media="screen">
+	<link rel="stylesheet" id="skinResponsive" href="https://test.ognisportoltre.it/skins/oso/css/responsive.css?v=2017092512" media="screen">
+	<link rel="stylesheet" href="https://test.ognisportoltre.it/skins/oso/css/bootstrap/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" href="https://test.ognisportoltre.it/skins/oso/css/custom.css" media="screen">
+
+
+
+<style type="text/css">
+
+
+#navbar > div > ul {padding-bottom: 64px;}
+
+</style>
+
+
+
+<script type="text/javascript">
+	var TAMTAMY_PREVENT_CACHE = '2017092512';
+</script>
+
+
+
+<link rel="stylesheet" href="https://test.ognisportoltre.it/css/jquery/prettyPhoto.css?v=2017092512" type="text/css" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/common/js/cropper/cropper.min.css?v=2017092512" type="text/css" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/css/fontawesome/font-awesome-4.7.0/css/font-awesome.min.css?v=2017092512" type="text/css" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/css/jquery/jquery.mentionsInput.css?v=2017092512" type="text/css" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/css/jquery/flexslider.css?v=2017092512" type="text/css" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/common/video-js/video-js.min.css?v=2017092512" type="text/css">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/css/toastr/toastr.min.css?v=2017092512" type="text/css" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/css/jquery/dataTables/jquery.dataTables.css?v=2017092512" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/css/jquery/dataTables/dataTables.colVis.css?v=2017092512" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/css/jquery/dataTables/dataTables.responsive.css?v=2017092512" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/common/photoset-grid/css/colorbox.css?v=2017092512" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/css/bootstrap/bootstrap-datetimepicker.min.css" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/common/js/lib/bootstrap-iconpicker/css/bootstrap-iconpicker.min.css" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/common/js/select2/select2.min.css" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/common/js/fullcalendar/fullcalendar.min.css?v=2017092512" type="text/css" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/css/hero/heroSlider.css?v=2017092512" type="text/css" media="screen">
+<link rel="stylesheet" href="https://test.ognisportoltre.it/css/jquery/cookiecuttr.css" media="screen">
+
+<script type="text/javascript">var CONT_PATH = '';</script>
+
+<!-- build:myJsTag -->
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/lib/jquery-1.11.2.min.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/lib/jquery-ui-1.10.2.custom.min.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/lib/jquery.ui.touch-punch.min.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/lib/jquery-ui-i18n.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/lib/jquery.touchSwipe.min.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/DateUtils.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/tamtamytags/tags.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/bootstrap/bootstrap.min.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/lib/bootstrap3/bootstrap-confirmation.min.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/video-js/video.min.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/lib/jquery.expander.min.js"></script>
+
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/lib/moment-with-locales.min.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/lib/bootstrap3/bootstrap-datetimepicker.min.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/lib/bootstrap3/typeahead.bundle.min.js?v=2017092512"></script>
+
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/lib/jquery-smartupdater2.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/lib/jquery-periodicalupdater.js?v=2017092512"></script>
+<!-- endbuild -->
+
+<script src="https://apis.google.com/js/platform.js" async="" defer="" gapi_processed="true"></script>
+
+<script type="text/javascript">
+	var confirmationOptions = {
+		popout: true,
+		btnOkIcon: 'fa fa-check-circle-o',
+		btnCancelIcon: 'fa fa-times-circle-o',
+		copyAttributes: 'href target data-tt-link-to-post'
+	}
+	$(document).ready(function() {
+		$('[data-toggle="confirmation"]').confirmation(confirmationOptions);
+	});
+</script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+		    excuteOnRequireLoaded(function() {
+				require(['cookiecuttr'], function() {
+					$.cookieCuttr({
+						cookieNameAccepted: "tt_cookie_policy_accepted",
+						cookieNameDeclined: "tt_cookie_policy_declined",
+						cookieMessage:  "Questo sito utilizza cookies tecnici, di terze parti statistici di tipo analitico. Se vuoi saperne di pi&ugrave; o negare il consenso a tutti o alcuni cookie <a href='{{cookiePolicyLink}}' title='Informativa cookie'>clicca qui</a>. Con la prosecuzione della navigazione mediante accesso a un qualunque elemento sottostante questo banner acconsenti all&apos;uso dei cookie.",
+						cookiePolicyLink: "https://test.ognisportoltre.it/documents/cookies.pdf",
+						cookieAcceptButtonText: '<i class="fa fa-times" title="chiudi"></i>',
+						cookieDeclineButtonText: "Rifiuta",
+						cookieAnalytics: false,
+						cookieDeclineButton: false
+					});
+				});
+			});
+		});
+	</script>
+
+
+
+<script src="https://test.ognisportoltre.it/public/dictionary.action?v=2017092512"></script>
+
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/userInfo.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/navbar.js?v=2017092512"></script>
+
+
+<script type="text/javascript">
+	function htmlEscape(str) {
+    	return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/"https://test.ognisportoltre.it/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+	}
+
+	jQuery.ajaxSettings.traditional = true;
+	$.ajaxSetup({
+	   type: "POST",
+	   contentType: "application/x-www-form-urlencoded; charset=UTF8"
+ 	});
+
+	$.datepicker.setDefaults($.datepicker.regional['']);
+
+	//Support constants: equivalent counterparts are found in JSonResultStatus.java e JSonResultCode.java
+
+	//Main code
+	var ERROR = 'ERROR';
+	var SUCCESS = 'SUCCESS';
+
+	//Secondary code
+	//Success messages specification
+	var SUCCESS = 'SUCCESS';
+	var SUCCESS_CODE = 0;
+	var SUCCESS_EMPTY_RESULT = 'SUCCESS_EMPTY_RESULT';
+	var SUCCESS_EMPTY_RESULT_CODE = 1;
+
+	//Error messages specification
+	var ERROR_USER_NOT_IN_SESSION = 'ERROR_USER_NOT_IN_SESSION';
+	var ERROR_USER_NOT_IN_SESSION_CODE = 101;
+
+	var urlAcceptWaitingContent = '/content-json/approveContent.action';
+	var urlRejectWaitingContent = '/content-json/rejectContent.action';
+	var urlAcceptWaitingComment = '/comment-json/approveComment.action';
+	var urlRejectWaitingComment = '/comment-json/rejectComment.action';
+
+	var TT_BASE_URL_IMG = '/img';
+	var TT_BASE_URL_CSS = '/css';
+	var TT_BASE_URL_JS = '';
+	var TT_SKIN_URL = '/skins/oso';
+	var TT_BASE_URL_AVATAR = '/pub/avatar';
+	var TT_BASE_URL_AVATAR_GROUP = '/pub/avatarGroup';
+	var TT_BASE_URL_THUMB = '/pub/thumb';
+
+	var TT_SUBDIR_STATIC_ASSETS_DIR = '';
+
+	// Different types of content input forms.
+	var CONTENT_FAMILY_FILE = 'file';
+	var CONTENT_FAMILY_LINK = 'link';
+	var CONTENT_FAMILY_MESSAGE = 'message';
+
+	var DEFAULT_FIRST_LEVEL_DOMAIN = 'ognisportoltre.it';
+	var PROTOCOL_PREFIX_TAMTAMY = 'https';
+	var CONTEXT_PATH = ''; // i.e. /tamtamy--%>
+	var _BASE_ = 'test.ognisportoltre.it/';
+	var REVERSE_CONTENT_ORDERING = false;
+
+	var tt_app_path = '';
+
+	var JSON_CONTEXT = {"i18n":{"language":"it-IT","locale":"it_IT"},"network":{"id":"c2c","palette":{"primary":{"hex":"715d80","rgb":{"red":113,"green":93,"blue":128},"hsb":{"saturation":0.2734375,"brightness":0.5019608,"hue":0.7619048},"hsl":{"saturation":16,"lightness":43,"hue":274}},"colours":[{"hex":"715d80","rgb":{"red":113,"green":93,"blue":128},"hsb":{"saturation":0.2734375,"brightness":0.5019608,"hue":0.7619048},"hsl":{"saturation":16,"lightness":43,"hue":274}},{"hex":"4a759f","rgb":{"red":74,"green":117,"blue":159},"hsb":{"saturation":0.5345912,"brightness":0.62352943,"hue":0.58235294},"hsl":{"saturation":36,"lightness":46,"hue":210}},{"hex":"4a759f","rgb":{"red":74,"green":117,"blue":159},"hsb":{"saturation":0.5345912,"brightness":0.62352943,"hue":0.58235294},"hsl":{"saturation":36,"lightness":46,"hue":210}}]}}};
+	var GOOGLE_INTEGRATION_ACTIVE = false;
+
+	$(document).ready(
+		function () {
+			currentLocale = 'it';
+			if (currentLocale == 'en') {
+				$.datepicker.setDefaults($.extend({showMonthAfterYear: false}, $.datepicker.regional['']));
+			} else {
+				$.datepicker.setDefaults($.datepicker.regional[currentLocale]);
+			}
+			moment.locale(currentLocale);
+			$('[data-jqueryExpandable]').each(function() {
+				var slicePoint = $(this).attr("data-expandable-char-number");
+				$(this).expander({slicePoint:slicePoint, expandText: 'Continua',
+					onSlice: function(o) {
+						var contentLink = $(this).data('tt-url');
+						var moreHtml = $($.parseHTML(o.moreLabel)).removeAttr("class");
+						moreHtml.find(".more-link").attr("href", contentLink);
+						o.moreLabel= moreHtml.prop("outerHTML");
+					}
+				});
+			});
+		}
+	)
+
+	function isInternetExplorer(){ // not for IE11
+		return navigator.userAgent.indexOf("MSIE") != -1;
+	}
+
+	var allowedChars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-+òàùèì@.';
+	var submitChars = ', ;';
+
+	function acCheckChars(e, callBack){
+
+		var c = String.fromCharCode(e.which);
+		if(e.which == 13 || submitChars.indexOf(c) >= 0 ) {
+			callBack();
+			e.preventDefault();
+			return false;
+		}
+
+		if(e.which != 0 && e.which != 8 && allowedChars.indexOf(c) < 0){
+			e.preventDefault();
+			return false;
+		}
+	}
+
+	function array_contains(array, el) {
+		for(i=0; i < array.length; i++) {
+			if(array[i] == el) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	function excuteOnRequireLoaded(callback){
+		if(window.ttRequireJSLoaded){
+			callback();
+		}else{
+			$(document).on("requirejs-ready",function(){
+				callback();
+			});
+		}
+	}
+
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+		var userInSession = null;
+
+</script>
+
+
+
+
+<script>
+var countWidgetRepositioning = 0;
+function showPluginElement(elementSelector) {
+	var selectorContainer = "#widgetProfileCompletion_placeHolder";
+	var toSelector = "#widgetProfileCompletion_placeHolder .alert_padding";
+	if($(toSelector).size() > 0) {
+		if(countWidgetRepositioning == 0) {
+			countWidgetRepositioning++;
+			var pluginClone = $(elementSelector).clone();
+			var newElementSelectorId = "headerfixed_w_profile_completion";
+			pluginClone.attr("id", "headerfixed_w_profile_completion");
+			//$(elementSelector).remove();
+			pluginClone.appendTo(toSelector);
+			$("#profileCompletion").show();
+			$(selectorContainer).addClass('alert profile_alert');
+			$("#headerfixed_w_profile_completion").slideDown("slow");
+		}
+	} else {
+		$(elementSelector).addClass('alert profile_alert').show();
+		$(elementSelector+" #profileCompletion").slideDown("slow");
+	}
+}
+
+var addFavoriteButtonClass = 'addFavoriteButton';
+var removeFavoriteButtonClass = 'removeFavoriteButton';
+var addBlacklistButtonClass = 'addBlacklistButton';
+var removeBlacklistButtonClass = 'removeBlacklistButton';
+
+function controlPanelToogle(selectorId, action) {
+	if(action == 'BLACKLIST_ADD') {
+		$("#"+selectorId+" .controlPanel div."+addFavoriteButtonClass).hide();
+		$("#"+selectorId+" .controlPanel div."+removeFavoriteButtonClass).hide();
+		$("#"+selectorId+" .controlPanel div."+addBlacklistButtonClass).hide();
+		$("#"+selectorId+" .controlPanel div."+removeBlacklistButtonClass).show();
+	} else if(action == 'BLACKLIST_REMOVE') {
+		$("#"+selectorId+" .controlPanel div."+addFavoriteButtonClass).show();
+		$("#"+selectorId+" .controlPanel div."+removeFavoriteButtonClass).hide();
+		$("#"+selectorId+" .controlPanel div."+addBlacklistButtonClass).show();
+		$("#"+selectorId+" .controlPanel div."+removeBlacklistButtonClass).hide();
+	} else if(action == 'FAVORITE_ADD') {
+		$("#"+selectorId+" .controlPanel div."+addFavoriteButtonClass).hide();
+		$("#"+selectorId+" .controlPanel div."+removeFavoriteButtonClass).show();
+		$("#"+selectorId+" .controlPanel div."+addBlacklistButtonClass).show();
+		$("#"+selectorId+" .controlPanel div."+removeBlacklistButtonClass).hide();
+	} else if(action == 'FAVORITE_REMOVE') {
+		$("#"+selectorId+" .controlPanel div."+addFavoriteButtonClass).show();
+		$("#"+selectorId+" .controlPanel div."+removeFavoriteButtonClass).hide();
+		$("#"+selectorId+" .controlPanel div."+addBlacklistButtonClass).show();
+		$("#"+selectorId+" .controlPanel div."+removeBlacklistButtonClass).hide();
+	}
+}
+
+function controlPanelUserTooltipToogle(htmlId, action) {
+	var selectorAdd = $(".controlPanelUserTooltip .addFavoriteButton_"+htmlId);
+	var selectorRemove = $(".controlPanelUserTooltip .removeFavoriteButton_"+htmlId);
+	var selectorBlacklisted = $(".controlPanelUserTooltip .blacklisted_"+htmlId);
+
+	var selectorFriendAdd = $(".controlPanelUserTooltip .addFriendButton_"+htmlId);
+	var selectorFriendPending = $(".controlPanelUserTooltip .addFriendButtonRequested_"+htmlId);
+	var selectorFriendRemove = $(".controlPanelUserTooltip .removeFriendButton_"+htmlId);
+
+	selectorAdd.each(
+			function(){
+				if(action=='FAVORITE_ADD'){$(this).hide();}
+				else if(action=='FAVORITE_REMOVE'){$(this).show();}
+				else if(action=='BLACKLIST_ADD'){$(this).hide();}
+				else if(action=='BLACKLIST_REMOVE'){$(this).show();}
+			}
+	);
+	selectorRemove.each(
+			function(){
+				if(action=='FAVORITE_ADD'){$(this).show();}
+				else if(action=='FAVORITE_REMOVE'){$(this).hide();}
+				else if(action=='BLACKLIST_ADD'){$(this).hide();}
+				else if(action=='BLACKLIST_REMOVE'){$(this).hide();}
+			}
+	);
+	selectorBlacklisted.each(
+			function(){
+				if(action=='FAVORITE_ADD'){$(this).hide();}
+				else if(action=='FAVORITE_REMOVE'){$(this).hide();}
+				else if(action=='BLACKLIST_ADD'){$(this).show();}
+				else if(action=='BLACKLIST_REMOVE'){$(this).hide();}
+			}
+	);
+	selectorFriendAdd.each(
+			function(){
+				if(action=='FRIEND_ADD'){$(this).hide();}
+				else if(action=='FRIEND_REMOVE'){$(this).show();}
+			}
+	);
+	selectorFriendPending.each(
+			function(){
+				if(action=='FRIEND_ADD'){$(this).show();}
+				else if(action=='FRIEND_REMOVE'){$(this).hide();}
+			}
+	);
+	selectorFriendRemove.each(
+			function(){
+				if(action=='FRIEND_ADD'){$(this).hide();}
+				else if(action=='FRIEND_REMOVE'){$(this).hide();}
+			}
+	);
+}
+
+function toggleBlacklist(action, blacklistFamily, elementId, selectorId, textSupport) {
+	var url = '/json-profiledNavigation/addToBlackList.action';
+	var data;
+	var confirmText;
+	if(blacklistFamily == 'content' ||
+		blacklistFamily == 'relatedContent') {
+		if(action=='ADD') {
+			confirmText = "Are you sure to add content: \""+textSupport+"\" to your blacklist?";
+		} else {
+			confirmText = "Are you sure to remove content: \""+textSupport+"\" from your blacklist?";
+		}
+		data = {'blacklistFamily': blacklistFamily, 'contentId': elementId};
+	} else if(blacklistFamily == 'user' ||
+		blacklistFamily == 'relatedUser') {
+		if(action=='ADD') {
+			confirmText = "Are you sure to add \""+textSupport+"\" to your blacklist?";
+		} else {
+			confirmText = "Are you sure to remove \""+textSupport+"\" from your blacklist?";
+		}
+		data = {'blacklistFamily': blacklistFamily, 'userID': elementId};
+	}
+	//if(confirm(confirmText)) {
+		$.getJSON(
+				url,
+				data,
+				function(jsonResp){
+					var selector = $("#"+selectorId);
+					var status = jsonResp[0][0];
+					var message = jsonResp[0][1];
+					var selectorControlPanel = $("#"+selectorId+" .controlPanel");
+					if(status == 'success'){
+						selector.toggleClass('blacklisted');
+						if(action=='ADD') {
+							controlPanelToogle(selectorId, 'BLACKLIST_ADD');
+							if(blacklistFamily == 'user' ||
+									blacklistFamily == 'relatedUser') {
+								controlPanelUserTooltipToogle(elementId.replace('.', '_-_'), 'BLACKLIST_ADD');
+							}
+						} else {
+							controlPanelToogle(selectorId, 'BLACKLIST_REMOVE');
+							if(blacklistFamily == 'user' ||
+									blacklistFamily == 'relatedUser') {
+								controlPanelUserTooltipToogle(elementId.replace('.', '_-_'), 'BLACKLIST_REMOVE');
+							}
+						}
+					} else {
+						alert(message);
+					}
+				}
+		);
+	//}
+}
+
+function addToFavorites(userId, htmlId, callback, action){
+	//$('#'+htmlId+' a').text('In process...');
+	var socialRelationshipType = 'favorite';
+	if(action == 'FRIEND_ADD') {
+		socialRelationshipType = 'friendship';
+	}
+	$.post(
+		'/json/socialRelationshipConnect.action',
+		{
+			'relationshipId': socialRelationshipType,
+			'userId':userId
+		},
+		function(json){
+			//callback(json, userId, htmlId, action);
+			callback(json, htmlId, action);
+		},
+		'json'
+	);
+	return false;
+}
+
+function removeFromFavorites(userId, htmlId, callback, action){
+	//$('#'+htmlId+' a').text('In process...');
+	var socialRelationshipType = 'favorite';
+	if(action == 'FRIEND_REMOVE') {
+		socialRelationshipType = 'friendship';
+	}
+	$.post(
+		'/json/socialRelationshipDisconnect.action',
+		{
+			'relationshipId': socialRelationshipType,
+			'userId':userId
+		},
+		function(json){
+			//callback(json, userId, htmlId, action);
+			callback(json, htmlId, action);
+		},
+		'json'
+	);
+	return false;
+}
+
+function callBackSecondLevelUserSuggestions(json, userId, htmlId) {
+	$('#'+htmlId+' a').hide();
+	var out = '<a class="done" href="javascript:void(0);">Added to favorites</a>';
+	$('#'+htmlId).append(out);
+	$("#"+htmlId).parent().hide();
+	$("#scheda_user_"+userId.replace('.', '_-_')).each(
+			function(){
+				$(this).hide();
+			}
+	);
+}
+
+function callBackUserTooltip(json, htmlId, action) {
+	controlPanelUserTooltipToogle(htmlId, action);
+	controlPanelToogle('scheda_user_'+htmlId, action);
+}
+
+function expandContentDescription(action, contentId) {
+	var selector_small = $("#smallDescription_"+contentId);
+	var selector_small_expander = $("#smallDescriptionExpander_"+contentId);
+	var selector_long = $("#longDescription_"+contentId);
+	var selector_long_expander = $("#longDescriptionExpander_"+contentId);
+	if(action == 'more') {
+		selector_long.css("display", "inline");
+		selector_long_expander.css("display", "inline");
+		selector_small.css("display", "none");
+		selector_small_expander.css("display", "none");
+	} else if(action == 'less'){
+		selector_long.css("display", "none");
+		selector_long_expander.css("display", "none");
+		selector_small.css("display", "inline");
+		selector_small_expander.css("display", "inline");
+	}
+	/*
+	 * Versione animata - da rivedere
+	 **
+	if(action == 'more') {
+		selector_small.hide(1,function(){selector_long.slideDown("fast");});
+	} else if(action == 'less'){
+		selector_long.slideUp("fast",function(){selector_small.show()});
+	}
+	*/
+	return false;
+}
+
+function expandCommentDescription(action, commentId) {
+	var selector_small = $("#smallDescriptionComment_"+commentId);
+	var selector_small_expander = $("#smallDescriptionCommentExpander_"+commentId);
+	var selector_long = $("#longDescriptionComment_"+commentId);
+	var selector_long_expander = $("#longDescriptionCommentExpander_"+commentId);
+	if(action == 'more') {
+		selector_long.css("display", "inline");
+		selector_long_expander.css("display", "inline");
+		selector_small.css("display", "none");
+		selector_small_expander.css("display", "none");
+	} else if(action == 'less'){
+		selector_long.css("display", "none");
+		selector_long_expander.css("display", "none");
+		selector_small.css("display", "inline");
+		selector_small_expander.css("display", "inline");
+	}
+	/*
+	 * Versione animata - da rivedere
+	 **
+	if(action == 'more') {
+		selector_small.hide(1,function(){selector_long.slideDown("fast");});
+	} else if(action == 'less'){
+		selector_long.slideUp("fast",function(){selector_small.show()});
+	}
+	*/
+	return false;
+}
+</script>
+
+
+	<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/handlebars/handlebars.min.js?v=2017092512"></script>
+	<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/handlebars/templates/templates.js?v=2017092512"></script>
+	<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/handlebars/handlebars-wrapper-precompiled.js?v=2017092512"></script>
+
+
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/handlebars/handlebars-wrapper.js?v=2017092512"></script>
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/handlebars/handlebars-macro.js?v=2017092512"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkFK3W-ZpF_0n41TOA-6Shz749WsoqdqY&amp;libraries=places"></script>
+
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://test.ognisportoltre.it/common/js/widgets/common.js?v=2017092512" src="https://test.ognisportoltre.it/common/js/widgets/common.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/main" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/main.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="cookie" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.cookie.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/core/controller/TamTamyWidgetsController" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/core/controller/TamTamyWidgetsController.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="cookiecuttr" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.cookiecuttr.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/util/Utils" src="https://test.ognisportoltre.it/common/js/widgets/common/util/Utils.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/core/widget/Widget" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/core/widget/Widget.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/util/HandlebarsDispatcher" src="https://test.ognisportoltre.it/common/js/widgets/common/util/HandlebarsDispatcher.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="handlebars-intl" src="https://test.ognisportoltre.it/common/js/widgets/../handlebars/intl/handlebars-intl.min.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.elastic" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.elastic.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="caret" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.caret.min.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="https://test.ognisportoltre.it/common/js/widgets/../lib/underscore-min.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/util/HandlebarsHelpers" src="https://test.ognisportoltre.it/common/js/widgets/common/util/HandlebarsHelpers.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/util/HandlebarsMapper" src="https://test.ognisportoltre.it/common/js/widgets/common/util/HandlebarsMapper.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="handlebars-intl-tranlsations" src="https://test.ognisportoltre.it/common/js/widgets/../handlebars/intl/widgetTranslations/WidgetTranslations_it_IT.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="handlebars-intl-language" src="https://test.ognisportoltre.it/common/js/widgets/../handlebars/intl/locale-data/it.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.mentionsInput" src="https://test.ognisportoltre.it/common/js/widgets/../lib/jquery.mentionsInput.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="https://test.ognisportoltre.it/common/js/widgets/../lib/moment-with-locales.min.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/core/widget/MicrophoneWidget" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/core/widget/MicrophoneWidget.js?v=2017092512"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tamtamy/core/widget/OsoUserTabsWidget" src="https://test.ognisportoltre.it/common/js/widgets/tamtamy/core/widget/OsoUserTabsWidget.js?v=2017092512"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/10/intl/it_ALL/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/10/intl/it_ALL/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/10/intl/it_ALL/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttps%3A%2F%2Ftest.ognisportoltre.it%2Flimitless-hack&amp;4sAIzaSyAkFK3W-ZpF_0n41TOA-6Shz749WsoqdqY&amp;callback=_xdc_._251olx&amp;token=81586"></script></head>
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
-      </header>
-
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
-
-    </div> <!-- /container -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

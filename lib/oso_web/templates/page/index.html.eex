@@ -1,3 +1,1485 @@
+<body class="homePubblica section_ navDepth ">
+
+		<div id="mainwrap" class="container exploded customPage">
+			<div id="loading" style="display: none;">
+				Loading...
+			</div>
+
+
+	<div id="header">
+		<div class="container">
+
+				<div id="headercol405" class="headercolumn_generico headerColumn0 lastHeaderColumn col-lg-12 col-md-12  col-sm-12 col-xs-12">
+
+<div class="sticky-header">
+	<div class="container">
+		<nav class="navbar">
+			<div class="nav-first-level clearfix">
+				<div class="clearfix">
+					<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+							<a class="navbar-brand pull-left hidden-sm hidden-md hidden-lg" href="https://test.ognisportoltre.it/"><span class="sr-only">Vai alla home Ogni Sport Oltre</span>
+								<img class="img-responsive hidden-md hidden-lg logo-mobile" src="https://test.ognisportoltre.it/skins/oso/graphic/logo-oso-mobile.png" alt="Logo OSO">
+							</a>
+							<a class="navbar-brand hidden-xs" href="https://test.ognisportoltre.it/"> <span class="sr-only">Vai alla home Ogni Sport Oltre</span>
+							<img class="hidden-xs logo-default" src="https://test.ognisportoltre.it/skins/oso/graphic/logo-oso.png" alt="Logo Ogni Sport Oltre, promosso da Fondazione Vodafone Italia">
+							</a>
+					</div>
+					<div class="col-xs-7 col-sm-6 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+						<ul class="nav navbar-nav c-table pull-right">
+							<li class="hidden-xs">
+								<a href="https://test.ognisportoltre.it/iniziativa" class="btn btn-primary btn-md">Cosa è OSO</a>
+							</li>
+							<li class="hidden-xs">
+								<form action="https://test.ognisportoltre.it/page/search.action">
+									<div class="input-group custom-search">
+										<input type="text" aria-label="Inserisci chiave di ricerca" class="form-control rounded" name="searchQuery" data-tt-microphone-target="value" placeholder="Persone, strutture, passioni...">
+										<span class="input-group-addon rounded">
+											<button type="button" aria-label="Utilizza la ricerca vocale" data-tt-widget-widget="microphone" data-tt-widget-timestamp="1508638186545"><span class="icon-mic c-primary" data-tt-widget-trigger="openmic"></span></button>
+											<button type="submit" aria-label="Avvia la ricerca per le chiavi inserite"><span class="icon-lente"></span></button>
+										</span>
+									</div>
+								</form>
+							</li>
+														<li>
+								<a href="https://test.ognisportoltre.it/login" class="btn btn-primary">Accedi</a>
+							</li>
+														<li class="hidden-md hidden-lg">
+								<button id="hamburger" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+									<span class="hamburger-line"></span>
+									<span class="hamburger-line"></span>
+									<span class="hamburger-line"></span>
+									<span class="hamburger-line"></span>
+									<span class="sr-only">Toggle navigation</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse nav-second-level clearfix navbar-inverse m-centered">
+				<div class="clearfix">
+					<ul class="nav navbar-nav" data-tt-mainnavigation="">
+				  		<li class="visible-xs m-centered">
+							<form action="https://test.ognisportoltre.it/page/search.action">
+					  			<div class="input-group custom-search">
+									<input type="text" class="form-control rounded" name="searchQuery" data-tt-microphone-target="value" placeholder="Persone, strutture, passioni...">
+									<span class="input-group-addon rounded">
+									<button type="button" data-tt-widget-widget="microphone" data-tt-widget-timestamp="1508638186545"><span class="icon-mic icon-mic c-primary" data-tt-widget-trigger="openmic"></span></button>
+									<button type="submit"> <span class="icon-lente"></span> </button>
+									</span>
+								</div>
+							</form>
+				  		</li>
+						<li class="visible-xs m-centered"><a href="https://test.ognisportoltre.it/iniziativa" class="btn btn-primary btn-md">Cosa è OSO</a></li>
+						<li><a href="https://test.ognisportoltre.it/evidenza">In evidenza</a></li>
+						<li><a href="https://test.ognisportoltre.it/passioni">Passioni</a></li>
+						<li><a href="https://test.ognisportoltre.it/oso/progetti.action">Progetti</a></li>
+						<li><a href="https://test.ognisportoltre.it/eventi">Eventi</a></li>
+						<li><a href="https://test.ognisportoltre.it/strutture">Strutture</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>
+
+
+
+<script>
+(function(){
+var scrollable = true;
+( function ( document, window, index )
+		{
+			'use strict';
+
+			var elSelector		 = '.sticky-header',
+				elClassHidden	 = 'sticky-header--hidden',
+				throttleTimeout	 = 500,
+				element			 = document.querySelector( elSelector ),
+				elSelectorHeight = document.querySelector( elSelector ).offsetHeight;
+
+			if( !element ) return true;
+
+			var dHeight			= 0,
+				wHeight			= 0,
+				wScrollCurrent	= 0,
+				wScrollBefore	= 0,
+				wScrollDiff		= 0,
+
+				hasElementClass		= function( element, className ){ return element.classList ? element.classList.contains( className ) : new RegExp( '(^| )' + className + '( |$)', 'gi' ).test( element.className ); },
+				addElementClass		= function( element, className ){ element.classList ? element.classList.add( className ) : element.className += ' ' + className; },
+				removeElementClass	= function( element, className ){ element.classList ? element.classList.remove( className ) : element.className = element.className.replace( new RegExp( '(^|\\b)' + className.split( ' ' ).join( '|' ) + '(\\b|$)', 'gi' ), ' ' ); },
+
+				throttle = function( delay, fn )
+				{
+					var last, deferTimer;
+					return function()
+					{
+						var context = this, args = arguments, now = +new Date;
+						if( last && now < last + delay )
+						{
+							clearTimeout( deferTimer );
+							deferTimer = setTimeout( function(){ last = now; fn.apply( context, args ); }, delay );
+						}
+						else
+						{
+							last = now;
+							fn.apply( context, args );
+						}
+					};
+				};
+
+			window.addEventListener( 'scroll', throttle( throttleTimeout, function()
+			{
+				dHeight			= document.body.offsetHeight;
+				wHeight			= window.innerHeight;
+				wScrollCurrent	= window.pageYOffset;
+				wScrollDiff		= wScrollBefore - wScrollCurrent;
+
+				if( wScrollCurrent <= elSelectorHeight && scrollable == true) // scrolled to the very top; element sticks to the top
+					removeElementClass( element, elClassHidden );
+
+				else if( wScrollDiff > 0 && hasElementClass( element, elClassHidden ) && scrollable == true) // scrolled up; element slides in
+					removeElementClass( element, elClassHidden );
+
+				else if( wScrollDiff < 0 && scrollable == true) // scrolled down
+				{
+					if( wScrollCurrent + wHeight >= dHeight && hasElementClass( element, elClassHidden ) ) // scrolled to the very bottom; element slides in
+					{
+						removeElementClass( element, elClassHidden );
+					}
+					else // scrolled down; element slides out
+					{
+						addElementClass( element, elClassHidden );
+						$('#header .avatar.dropdown.open [aria-expanded]').attr('aria-expanded','false');
+						$('#header .avatar.dropdown.open').removeClass('open').attr('aria-expanded','false');
+					}
+				}
+
+				wScrollBefore = wScrollCurrent;
+			}));
+
+		}( document, window, 0 ));
+
+var vPort;
+$('.nav .avatar').on('show.bs.dropdown ', function () {
+	vPort = $(window).outerWidth();
+	if(vPort < 1023){
+		$('body').addClass('no-scroll');
+		scrollable = false;
+	}
+
+});
+$('.nav .avatar').on('hide.bs.dropdown', function () {
+		$('body').removeClass('no-scroll');
+		scrollable = true;
+});
+$('#navbar').on('show.bs.collapse', function () {
+	vPort = $(window).outerWidth();
+	if(vPort < 1023){
+		$('body').addClass('no-scroll');
+		scrollable = false;
+	}
+});
+$('#navbar').on('hide.bs.collapse', function () {
+		$('body').removeClass('no-scroll');
+		scrollable = true;
+});
+
+var _highlightCurrent = function(navItem){
+	if(window.location.pathname){
+		var currentPath = window.location.pathname;
+		var thisPath = $(this).attr('href');
+		var check = new RegExp("^"+thisPath);
+		if (check.test(currentPath)){
+			$(this).parent().addClass('active');
+		}
+	}
+};
+$('[data-tt-mainnavigation] li a').each(_highlightCurrent);
+
+})();
+</script>
+
+
+<style type="text/css">
+.homePubblica #video_1 {  transition: 0.2s padding ease-out }
+.homePubblica #video_1:not(.vjs-has-started) {
+padding-top: 26.1%;
+}
+</style>
+
+ <div class="videocontent no-margin-header">
+         <a href="https://test.ognisportoltre.it/limitless-hack">
+         <img src="https://test.ognisportoltre.it/skins/oso/graphic/hack-banner.jpg" class="videooso-moltostretto" alt="Limitless Hack, Disabilita ogni limite. Il primo hackathon per avvicinare le persone con disabilità allo sport. Vodafone Village Milano 21,22 ottobre." style="width:100%; margin-top:22px;"></a>
+              <!--<video id="video_1" class="video-js vjs-default-skin videooso-moltostretto vjs-big-play-centered" controls muted preload="none" data-setup='{"fluid":true}' poster="https://test.ognisportoltre.it/skins/oso/alex.jpg" playsinline>
+                           <source src="https://d31fapuhilctf4.cloudfront.net/video/O3_TEASER_o3_compresso.mp4" type="video/mp4">
+                                            <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                                                             </video>-->
+        <div class="home-pubblica-claim panel panel-default text-center no-margin-bottom">
+                <div class="panel-body">
+                        <div class="clearfix">
+                                <div class="panel-body text-center">
+                                        <a href="https://test.ognisportoltre.it/limitless-hack" class="btn btn-primary btn-lg">Scopri Limitless Hack</a>
+                                </div>
+                        </div>
+                </div>
+        </div>
+ </div>
+
+ <div class="home-pubblica-claim panel panel-default text-center no-margin-bottom">
+ 	<div class="panel-body">
+	  	<div class="clearfix">
+	 		<div class="col-md-6 col-md-offset-3">
+	 			<div>
+		  		 	<h1 class="f-size-2-5">Ogni Sport Oltre</h1>
+			 		<h2 class="f-light">
+			 			Oltre le barriere, la forza dello sport
+			 		</h2>
+	 			</div>
+	 			<div class="panel-body text-center">
+	 				<a href="https://test.ognisportoltre.it/iniziativa" class="btn btn-primary btn-lg">Scopri di più</a>
+	 			</div>
+	  			<div class="panel-body text-center">
+					<a href="http://voda.it/oso-ios"><img class="" src="https://test.ognisportoltre.it/skins/oso/graphic/it_app_store.png" alt="App Store"></a>
+					<a href="http://voda.it/oso-android"><img class="" src="https://test.ognisportoltre.it/skins/oso/graphic/it_play_store.png" alt="App Store"></a>
+	 			</div>
+	 		</div>
+	 	</div>
+ 	</div>
+ </div>
+
+
+ <div class="home-pubblica-login panel no-margin-bottom">
+ 		 	<div class="panel-body">
+						<div data-tt-widget-widget="UserLogin" data-tt-widget-template="widgets/userLogin/loginFormHome" data-tt-widget-config="{&quot;FBapiVersion&quot;:&quot;2.8&quot;,&quot;FBappId&quot;:&quot;440993466264607&quot;,&quot;FBscopes&quot;:&quot;public_profile,email&quot;}" data-tt-widget-timestamp="1508638186545"><div class="container custom-container bg-transparent login-area">
+	<div class="row">
+		<div class="col-sm-5 col-md-4 col-md-offset-2 col-sm-offset-1 m-centered">
+			<div class="panel-body center-middle no-padding-left no-padding-right no-padding-bottom">
+				<div class="row">
+					<div class="col-sm-6 col-md-6">
+						<h2 class="f-light no-margin f-size-1-5">Accedi tramite</h2>
+					</div>
+					<div class="col-md-5 text-left m-centered">
+						<a class="btn btn-social btn-google" href="https://test.ognisportoltre.it/user/google-login.action">
+							<i class="fa fa-google" title="Google Login"></i>
+						</a>
+						<a class="btn  btn-social btn-twitter" href="https://test.ognisportoltre.it/user/twitter-login.action">
+							<i class="fa fa-twitter" title="Twitter Login"></i>
+						</a>
+						<a class="btn btn-social btn-facebook" href="javascript:void(0)" data-tt-widget-trigger="facebookLogin">
+							<i class="fa fa-facebook" title="Facebook Login"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-5 col-md-5 text-left m-centered">
+			<div class="panel-body center-middle no-padding-left no-padding-right">
+				<div class="row">
+					<div class="col-sm-3 col-md-3">
+						<h2 class="f-light no-margin f-size-1-5">Oppure</h2>
+					</div>
+					<div class="col-m-9 col-md-9">
+						<a class="btn btn-primary" href="https://test.ognisportoltre.it/registrazione">
+							Registrati alla community
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="facebookPermissionModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Facebook grants required</h4>
+			</div>
+			<div class="modal-body">
+				<p>You must accept all required Facebook grants</p>
+			</div>
+			<div class="modal-footer">
+				<a href="javascript:void(0);" class="btn btn-success" data-tt-widget-trigger="forceAcceptPermissionLogin">Accept</a>
+				<a href="javascript:void(0);" class="btn btn-danger" data-dismiss="modal">Refuse</a>
+			</div>
+		</div>
+	</div>
+</div></div>
+	 	</div>
+ 	 </div>
+
+ <script type="text/javascript">
+	 (function(){
+
+		function detectmob() {
+			 if( navigator.userAgent.match(/Android/i)
+			 || navigator.userAgent.match(/webOS/i)
+			 || navigator.userAgent.match(/iPhone/i)
+			 || navigator.userAgent.match(/iPad/i)
+			 || navigator.userAgent.match(/iPod/i)
+			 || navigator.userAgent.match(/BlackBerry/i)
+			 || navigator.userAgent.match(/Windows Phone/i)
+			 ){
+				return true;
+			  }
+			 else {
+				return false;
+			  }
+		}
+
+		function removeMute(){
+			if (detectmob() == false){
+				$('#video_1').removeAttr('muted');
+			}
+		}
+
+		removeMute();
+
+	 	var playFirstTime = function(){
+			var player = this;
+			var videoFile = $(player.el()).find('source').first().attr('src');
+			if (videoFile === undefined){
+				videoFile = true;
+			}
+
+			if (window.localStorage && videoFile != window.localStorage.homeVideoPlayed){
+
+				var showBar = function(){
+					$('.vjs-control-bar').show();
+				};
+
+				$('#video_1').one('touchstart', function(){
+					$('video',this).prop('muted',false);
+					showBar();
+				});
+				$('.vjs-control-bar').hide();
+				this.play();
+
+				this.one('ended', function(){
+					showBar();
+				});
+
+				window.localStorage.homeVideoPlayed = videoFile;
+			}
+
+	 	}
+
+	 	if (videojs){
+	 		videojs('#video_1').ready(playFirstTime);
+	 	}
+
+	 })();
+ </script>
+
+
+				</div>
+
+		</div>
+	</div>
+
+
+<div id="errorbox" style="display:none;">
+	&nbsp;
+</div>
+
+<script type="text/javascript">
+	function addActionMessageClose(){
+		$('#errorbox').fadeOut('slow');
+	}
+	function addActionMessage(msg, cssClass,url){
+		$('#errorbox').attr("class","");
+		if(cssClass!=undefined){
+			$('#errorbox').attr("class",cssClass);
+		}
+		$('#errorbox').html(msg);
+		$('#errorbox').fadeIn('slow');
+		setTimeout(function(){
+			addActionMessageClose();
+			if(url!=undefined){
+				setTimeout(addActionMessageClose, 3000);
+				window.location.href = url;
+			}
+		}, 3000);
+
+	}
+</script>
+
+
+<div id="home-highactmyp">
+
+</div>
+
+
+
+
+<div id="home-wrapcontent" class="container custom-container  ">
+	<div class="wrapcontent_padding">
+
+
+
+		<div id="main">
+
+
+
+	<div id="col364" class="column_generico homeColumn0 lastPBColumn col-lg-12 col-md-12  col-sm-12 col-xs-12">
+		<div class="column_padding">
+
+
+<div class="wrapwidg custom ">
+
+
+
+<div class="widget_padding">
+
+
+		<div id="lastContents402" data-tt-widget-widget="contentList" data-tt-widget-basequery="https://test.ognisportoltre.it/content/home-container(402)-template(custom)-showCategoryFilter()-target(all)-firstResult(0)-numberOfResult(25)-visibleOrder(publicationDate,hottest,activityDate)-contentTypeId(|strillo|)-orderByDesc(activityDate,publicationDate)-permission(|PUBLIC|)-excludeTags(||)-strillo_sezione(Home).action" data-tt-widget-timestamp="1508638186545">
+
+			<div class="isotope-grid" style="position: relative; height: 3758.64px;">
+	<div class="clearfix">
+<div id="scriptDiv">
+<script type="text/javascript">
+	type = '';
+	if(typeof(type) == 'undefined' || type.length == 0 || type == 'null') {
+		type = 'last';
+	}
+	$('#'+type+'Link').addClass("on");
+
+	function checkIfThereAreWhiteSpace(s, maxChars){
+		var index = s.indexOf(" ");
+
+		if(index == -1 && s.length > maxChars)
+			return true;
+
+		if(index != -1 && s.length > maxChars)
+			return checkIfThereAreWhiteSpace(s.substr(index+1, s.length), maxChars);
+
+		return false;
+	}
+
+	//recursive function to insert break chars every max char
+	function insertBreakChar(s){
+
+		var max = 5;
+		var firstPart = s.substr(0,max) + "&#8203;";
+		var secondPart;
+
+		if(s.length - firstPart.length > max){
+			secondPart = insertBreakChar(s.substr(max, s.length));
+			}
+		else{
+			secondPart = s.substr(max, s.length);
+			}
+
+		return firstPart + secondPart;
+	}
+</script>
+</div>
+<div class="contents_wrapper" data-tt-contentlist-selected-status="">
+		<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 0%; top: 50px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="news">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/la-briantea84-vince-la-supercoppa-giovanile.action">
+			<span class="sr-only">La Briantea84 vince la Supercoppa giovanile</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/vfbr2cfdojnr30l65onse9bhnv-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/la-briantea84-vince-la-supercoppa-giovanile.action" class="link-inverted">La Briantea84 vince la Supercoppa giovanile</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-news f-size-2"></span>
+					<small class="text-uppercase">News</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 33.3333%; top: 50px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="media">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/tre-gambe-in-verticale-nulla-e-impossibile.action">
+			<span class="sr-only">Tre Gambe in Verticale: nulla è impossibile</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/62sotg4sb0cnqi62maak0k25rb-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/tre-gambe-in-verticale-nulla-e-impossibile.action" class="link-inverted">Tre Gambe in Verticale: nulla è impossibile</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-media f-size-2"></span>
+					<small class="text-uppercase">Video</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 66.6667%; top: 50px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="news">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/special-olympics-il-teatro-il-papa-e-lo-sport-che-include.action">
+			<span class="sr-only">Special Olympics: il teatro, il Papa e lo sport che include</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/e2o5authkfbmpeudl42k4m5g8q-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/special-olympics-il-teatro-il-papa-e-lo-sport-che-include.action" class="link-inverted">Special Olympics: il teatro, il Papa e lo sport che include</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-news f-size-2"></span>
+					<small class="text-uppercase">News</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 0%; top: 391px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="storie">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/io-sono-una-tigre-veloce-il-basket-nel-segno-di-martin.action">
+			<span class="sr-only">"Io sono una tigre veloce", il basket nel segno di Martin </span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/jcd3h1g40ie4upuio6qkhtuhr2-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/io-sono-una-tigre-veloce-il-basket-nel-segno-di-martin.action" class="link-inverted">"Io sono una tigre veloce", il basket nel segno di Martin </a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-storie f-size-2"></span>
+					<small class="text-uppercase">Storie</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 33.3333%; top: 692px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="media">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/quando-il-golf-di-alto-livello-punta-all-inclusione-sociale.action">
+			<span class="sr-only">Quando il golf di alto livello punta all'inclusione sociale </span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/ak0non7qr505g86fm7qh4mq4c4-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/quando-il-golf-di-alto-livello-punta-all-inclusione-sociale.action" class="link-inverted">Quando il golf di alto livello punta all'inclusione sociale </a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-media f-size-2"></span>
+					<small class="text-uppercase">Video</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 66.6667%; top: 692px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="news">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/epyg-2017-atletica-oro-di-maggio-e-bagaini-argento-bertolaso-nei-400-italia-a-11-medaglie.action">
+			<span class="sr-only">EPYG 2017 Atletica: oro Di Maggio e Bagaini, argento Bertolaso nei 400. Italia a 11 medaglie</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/7lfk0phb351nh3uvjoav4qcj65-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/epyg-2017-atletica-oro-di-maggio-e-bagaini-argento-bertolaso-nei-400-italia-a-11-medaglie.action" class="link-inverted">EPYG 2017 Atletica: oro Di Maggio e Bagaini, argento Bertolaso nei 400. Italia a 11 medaglie</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-news f-size-2"></span>
+					<small class="text-uppercase">News</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 0%; top: 763px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="storie">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/ambasciatori-oltre-le-barriere.action">
+			<span class="sr-only">Ambasciatori oltre le barriere</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/ak4ub5670d5lkel4vug4bsldgr-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/ambasciatori-oltre-le-barriere.action" class="link-inverted">Ambasciatori oltre le barriere</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-storie f-size-2"></span>
+					<small class="text-uppercase">Storie</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 0%; top: 1000px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="news">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/epyg-liguria-25-medaglie-per-l-italia-dopo-la-prima-giornata.action">
+			<span class="sr-only">EPYG Liguria: 25 medaglie per l'Italia dopo la prima giornata</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/jup2b07fmvmd5rhko4ddj4j9ic-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/epyg-liguria-25-medaglie-per-l-italia-dopo-la-prima-giornata.action" class="link-inverted">EPYG Liguria: 25 medaglie per l'Italia dopo la prima giornata</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-news f-size-2"></span>
+					<small class="text-uppercase">News</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 66.6667%; top: 1013px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="media">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/daniele-cassioli-con-fabio-volo-a-che-tempo-che-fa.action">
+			<span class="sr-only">Daniele Cassioli con Fabio Volo a Che tempo che Fa </span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/e93k3ng56b8u6nmrpntkce72r6-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/daniele-cassioli-con-fabio-volo-a-che-tempo-che-fa.action" class="link-inverted">Daniele Cassioli con Fabio Volo a Che tempo che Fa </a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-media f-size-2"></span>
+					<small class="text-uppercase">Video</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 33.3333%; top: 1033px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="media">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/pronto-a-partire-il-progetto-del-sitting-together-is-better.action">
+			<span class="sr-only">Pronto a partire il progetto del sitting: Together Is Better</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/vtm98oldkle49n30qncqa4id5b-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/pronto-a-partire-il-progetto-del-sitting-together-is-better.action" class="link-inverted">Pronto a partire il progetto del sitting: Together Is Better</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-media f-size-2"></span>
+					<small class="text-uppercase">Video</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 33.3333%; top: 1281px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="storie">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/uomini-che-osano-nella-vertical-extreme.action">
+			<span class="sr-only">Uomini che osano nella Vertical Extreme</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/ueamtdpkdqe9h9qkuberfaosgl-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/uomini-che-osano-nella-vertical-extreme.action" class="link-inverted">Uomini che osano nella Vertical Extreme</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-storie f-size-2"></span>
+					<small class="text-uppercase">Storie</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 66.6667%; top: 1303px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="news">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/epyg-2017-atletica-paralimpica-oro-cardia-e-paciolla-argento-agostini-e-zani-nei-100.action">
+			<span class="sr-only">EPYG 2017 Atletica paralimpica: oro Cardia e Paciolla, argento Agostini e Zani nei 100 </span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/2i374b2ttpmimebvk6bogivufo-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/epyg-2017-atletica-paralimpica-oro-cardia-e-paciolla-argento-agostini-e-zani-nei-100.action" class="link-inverted">EPYG 2017 Atletica paralimpica: oro Cardia e Paciolla, argento Agostini e Zani nei 100 </a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-news f-size-2"></span>
+					<small class="text-uppercase">News</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 0%; top: 1582px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="eventi">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/si-apre-una-nuova-ed-entusiasmante-stagione-sportiva.action">
+			<span class="sr-only">Si apre una nuova entusiasmante stagione sportiva</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/uqg24b5m7kf2858jho3v51nl4j-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/associazione/asd-esplora" class="link-inverted">Esplora ASD</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/si-apre-una-nuova-ed-entusiasmante-stagione-sportiva.action" class="link-inverted">Si apre una nuova entusiasmante stagione sportiva</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/associazione/asd-esplora">
+					<span class="icon-eventi f-size-2"></span>
+					<small class="text-uppercase">Eventi</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 0%; top: 1936px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="storie">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/schiacciamo-la-sordita-con-la-pallavolo-senza-limiti.action">
+			<span class="sr-only">"Schiacciamo la sordità con la pallavolo.... Senza limiti"</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/ee3lfp6p39nmeic8l0hcsj3s3p-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/schiacciamo-la-sordita-con-la-pallavolo-senza-limiti.action" class="link-inverted">"Schiacciamo la sordità con la pallavolo.... Senza limiti"</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-storie f-size-2"></span>
+					<small class="text-uppercase">Storie</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 33.3333%; top: 2034px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="news">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/wow-il-viaggio-per-i-diritti-delle-persone-con-disabilita-arriva-a-venezia.action">
+			<span class="sr-only">WOW! Il viaggio per i diritti delle persone con disabilità arriva a Venezia</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/60n3i7djc88kt42oi3ov5hl1g7-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/wow-il-viaggio-per-i-diritti-delle-persone-con-disabilita-arriva-a-venezia.action" class="link-inverted">WOW! Il viaggio per i diritti delle persone con disabilità arriva a Venezia</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-news f-size-2"></span>
+					<small class="text-uppercase">News</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 66.6667%; top: 2044px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="storie">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/il-paratleta-giacomo-perini-in-visita-alle-fiamme-gialle-insieme-al-generale-romano.action">
+			<span class="sr-only">Il paratleta Giacomo Perini in visita alle Fiamme Gialle insieme al Generale Romano</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/dpc1d5atiinu5mljnd6400pf72-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-45aeef26-cf86-42aa-95cd-c5e0069b1547.action" class="link-inverted">nickname662</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/il-paratleta-giacomo-perini-in-visita-alle-fiamme-gialle-insieme-al-generale-romano.action" class="link-inverted">Il paratleta Giacomo Perini in visita alle Fiamme Gialle insieme al Generale Romano</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-45aeef26-cf86-42aa-95cd-c5e0069b1547.action">
+					<span class="icon-storie f-size-2"></span>
+					<small class="text-uppercase">Storie</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 0%; top: 2308px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="news">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/pesi-mondiali-il-27-novembre-i-tricolori-del-12-test-iridato.action">
+			<span class="sr-only">Pesi, Mondiali il 27 novembre: i tricolori del 12 test iridato</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/qmf2n955sl463r8053s54ch7fp-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/pesi-mondiali-il-27-novembre-i-tricolori-del-12-test-iridato.action" class="link-inverted">Pesi, Mondiali il 27 novembre: i tricolori del 12 test iridato</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-news f-size-2"></span>
+					<small class="text-uppercase">News</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 33.3333%; top: 2406px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="news">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/devicenzi-parla-ai-ragazzi-di-san-patrignano.action">
+			<span class="sr-only">Devicenzi parla ai ragazzi di San Patrignano</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/6qkh1bcup3vvcufmodsakg0ilo-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/devicenzi-parla-ai-ragazzi-di-san-patrignano.action" class="link-inverted">Devicenzi parla ai ragazzi di San Patrignano</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-news f-size-2"></span>
+					<small class="text-uppercase">News</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 66.6667%; top: 2415px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="news">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/giro-d-italia-handbike-finale-a-verona-tappa-a-giagnoni-rosa-bis-a-rizzato.action">
+			<span class="sr-only">Giro d’Italia Handbike, finale a Verona: tappa a Giagnoni, rosa-bis a Rizzato</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/vgb43v3t5e9rbdi7bq4f42iu2c-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/giro-d-italia-handbike-finale-a-verona-tappa-a-giagnoni-rosa-bis-a-rizzato.action" class="link-inverted">Giro d’Italia Handbike, finale a Verona: tappa a Giagnoni, rosa-bis a Rizzato</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-news f-size-2"></span>
+					<small class="text-uppercase">News</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 0%; top: 2680px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="news">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/epyg-da-mercoledi-11-oltre-600-atleti-in-liguria.action">
+			<span class="sr-only">EPYG da mercoledì 11, oltre 600 atleti in Liguria </span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/4o4npt5tb9vo2le118pbj15o62-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/epyg-da-mercoledi-11-oltre-600-atleti-in-liguria.action" class="link-inverted">EPYG da mercoledì 11, oltre 600 atleti in Liguria </a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-news f-size-2"></span>
+					<small class="text-uppercase">News</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 66.6667%; top: 2756px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="storie">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/rowing-for-all-conferenza-stampa-a-torino-alle-ore-11-30-del-prossimo-18-ottobre.action">
+			<span class="sr-only">"Rowing for All": Conferenza Stampa a Torino alle ore 11.30 del prossimo 18 ottobre</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/ptq0sqbpon69rgaseie8jm9i1l-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-45aeef26-cf86-42aa-95cd-c5e0069b1547.action" class="link-inverted">nickname662</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/rowing-for-all-conferenza-stampa-a-torino-alle-ore-11-30-del-prossimo-18-ottobre.action" class="link-inverted">"Rowing for All": Conferenza Stampa a Torino alle ore 11.30 del prossimo 18 ottobre</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-45aeef26-cf86-42aa-95cd-c5e0069b1547.action">
+					<span class="icon-storie f-size-2"></span>
+					<small class="text-uppercase">Storie</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 33.3333%; top: 3047px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="news">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/ciclismo-zanardi-a-maniago-in-vista-dei-mondiali-2018.action">
+			<span class="sr-only">Ciclismo, Zanardi a Maniago in vista dei Mondiali 2018</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/81necklqvtq6kk7dq0v84cbt1c-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/ciclismo-zanardi-a-maniago-in-vista-dei-mondiali-2018.action" class="link-inverted">Ciclismo, Zanardi a Maniago in vista dei Mondiali 2018</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-news f-size-2"></span>
+					<small class="text-uppercase">News</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 0%; top: 3052px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="storie">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/torneo-di-fine-stagione-2017-maurizio-pavarotti.action">
+			<span class="sr-only">TORNEO DI FINE STAGIONE 2017 "MAURIZIO PAVAROTTI"</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/7rrm7bir9b7gsd3eo02eusu12-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-087bacf6-5d19-454b-b018-dc1e71718cba.action" class="link-inverted">nickname74</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/torneo-di-fine-stagione-2017-maurizio-pavarotti.action" class="link-inverted">TORNEO DI FINE STAGIONE 2017 "MAURIZIO PAVAROTTI"</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-087bacf6-5d19-454b-b018-dc1e71718cba.action">
+					<span class="icon-storie f-size-2"></span>
+					<small class="text-uppercase">Storie</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 66.6667%; top: 3145px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="news">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/anche-lotti-e-malago-in-campo-con-special-olympics.action">
+			<span class="sr-only">Anche Lotti e Malagò in campo con Special Olympics</span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/i9n3k654t7jife1crpj84hrg7p-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/anche-lotti-e-malago-in-campo-con-special-olympics.action" class="link-inverted">Anche Lotti e Malagò in campo con Special Olympics</a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-news f-size-2"></span>
+					<small class="text-uppercase">News</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	<div class="template-custom panel panel-default" data-tt-content-item="" style="position: absolute; left: 0%; top: 3356px;">
+
+
+
+
+
+<div>
+	<div class="outer-container" data-type="storie">
+		<div class="panel-body no-padding image-url-container">
+			<a href="https://test.ognisportoltre.it/contenuti/il-gigante-iraniano-mahrzad-lo-sport-non-puo-spaventare-mai.action">
+			<span class="sr-only">Il gigante iraniano Mahrzad: "Lo sport non può spaventare mai" </span>
+							<img class="img-responsive" src="https://test.ognisportoltre.it/thumbmatic/3pqb4ncq7nkf2g98bvfab2pt4l-500-0.jpg" alt="Immagine">
+						</a>
+		</div>
+		<div class="panel-footer">
+			<div class="media">
+			  <div class="media-body media-middle">
+				  <small>di <a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action" class="link-inverted">nickname986</a></small>
+				  <h5 class="media-heading"><a href="https://test.ognisportoltre.it/contenuti/il-gigante-iraniano-mahrzad-lo-sport-non-puo-spaventare-mai.action" class="link-inverted">Il gigante iraniano Mahrzad: "Lo sport non può spaventare mai" </a></h5>
+				           			  </div>
+			  <div class="media-right media-middle text-center">
+				<a href="https://test.ognisportoltre.it/user/id-6c390d70-52c5-40b5-ab09-e2222062b535.action">
+					<span class="icon-storie f-size-2"></span>
+					<small class="text-uppercase">Storie</small>
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div></div>	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+<script src="https://test.ognisportoltre.it/skins/oso/isotope/isotope.pkgd.min.js"></script>
+<script src="https://test.ognisportoltre.it/skins/oso/isotope/imagesloaded.pkgd.min.js"></script>
+<script>
+$('.isotope-grid').isotope({
+	  percentPosition: true,
+	  itemSelector: '.template-custom',
+	  layoutMode: 'masonry',
+	  masonry: {
+		  gutter: 15
+		}
+	});
+	$('.isotope-grid').imagesLoaded().progress( function() {
+		 $('.isotope-grid').isotope('layout');
+	});
+
+</script>
+		</div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+
+
+		</div>
+
+
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<div id="footer" class="container">
+
+
+			<div id="footercol295" class="footercolumn_generico footerColumn0 lastFooterColumn col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+
+
+
+<div class="collapse" id="footer-info">
+	<div class="container custom-container text-center footer-sponsor">
+		<div class="panel-body no-padding-right no-padding-left">
+			<div class="row">
+				<div class="col-sm-4 col-md-4 partner">
+					<div class="row">
+						<div class="col-md-12">
+							<h4 class="f-light text-left m-centered bottom-bordered"><span>Promosso da</span></h4>
+						</div>
+						<div class="col-sm-12 col-md-12 text-left m-centered"><a href="http://www.vodafone.it/portal/Vodafone-Italia/Fondazione-Vodafone" target="_blank"><img alt="Logo Fondazione Vodafone Italia" class="logoFVI" src="https://test.ognisportoltre.it/skins/oso/graphic/partner-loghi/logo-fvi.png"></a></div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-3">
+					<div class="row">
+						<div class="col-md-12 text-left">
+							<h4 class="f-light m-centered bottom-bordered"><span>Con il supporto di</span></h4>
+						</div>
+						<div class="partner m-centered">
+							<div class="row">
+								<div class="col-sm-12 col-md-12 text-left m-centered"><a href="http://www.comitatoparalimpico.it/" target="_blank"><img src="https://test.ognisportoltre.it/skins/oso/graphic/partner-loghi/logoCIP.png" alt="Comitato Italiano Paralimpico"></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-5 partner m-centered">
+					<div class="row">
+						<div class="col-md-12 text-left">
+							<h4 class="f-light m-centered bottom-bordered"><span>In partnership con</span></h4>
+						</div>
+						<div class="m-centered">
+							<div class="row">
+								<div class="col-xs-6 col-sm-6 col-md-3 text-center"><a href="http://www.huawei.com" target="_blank"><img class="partner" src="https://test.ognisportoltre.it/skins/oso/graphic/partner-loghi/partner-huawei-gray.png" alt="Huawei"></a></div>
+								<div class="col-xs-6 col-sm-6 col-md-6 text-left"><a href="http://www.fondazioneconilsud.it" target="_blank"><img class="partner" src="https://test.ognisportoltre.it/skins/oso/graphic/partner-loghi/logoFondazioneConSud-gray.png" alt="Fondazione con il Sud"></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container custom-container">
+		<div class="sport-argomenti row">
+			<hr>
+			<div class="row">
+				<div class="col-sm-7 col-md-6">
+					<div class="row">
+						<div class="col-xs-12 col-sm-8 col-md-8">
+							<h4 class="m-centered">Sport</h4>
+							<div class="row m-centered">
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<ul class="list-unstyled">
+										<li><a href="https://test.ognisportoltre.it/passioni/sport_invernali" class="link-inverted">Sport invernali</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/basket" class="link-inverted">Basket</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/sport_estremi" class="link-inverted">Sport estremi</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/ciclismo" class="link-inverted">Ciclismo</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/atletica" class="link-inverted">Atletica</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/scherma" class="link-inverted">Scherma</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/calcio" class="link-inverted">Calcio</a></li>
+									</ul>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<ul class="list-unstyled">
+										<li><a href="https://test.ognisportoltre.it/passioni/tennis" class="link-inverted">Tennis</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/nuoto" class="link-inverted">Nuoto</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/volley" class="link-inverted">Volley</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/combattimento" class="link-inverted">Combattimento</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/tiri" class="link-inverted">Tiri</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/tennistavolo" class="link-inverted">Tennistavolo</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/boccia" class="link-inverted">Boccia</a></li>
+									</ul>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<ul class="list-unstyled">
+										<li><a href="https://test.ognisportoltre.it/passioni/sport_equestri" class="link-inverted">Sport equestri</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/pesistica_e_danza" class="link-inverted">Pesistica e Danza</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/hockey_in_carrozzina" class="link-inverted">Hockey in carrozzina</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/sport_acquatici" class="link-inverted">Sport acquatici</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/torball_e_goalball" class="link-inverted">Torball e Goalball</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/rugby_in_carrozzina" class="link-inverted">Rugby in carrozzina</a></li>
+										<li><a href="https://test.ognisportoltre.it/passioni/altri_sport" class="link-inverted">Altri sport</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3 col-md-offset-1">
+							<h4 class="m-centered">Argomenti</h4>
+							<ul class="list-unstyled m-centered">
+								<li><a href="https://test.ognisportoltre.it/passioni/viaggi_e_tempo_libero" class="link-inverted">Viaggi e tempo libero</a></li>
+								<li><a href="https://test.ognisportoltre.it/passioni/allenamento" class="link-inverted">Allenamento</a></li>
+								<li><a href="https://test.ognisportoltre.it/passioni/regolamenti_sportivi" class="link-inverted">Regolamenti sportivi</a></li>
+								<li><a href="https://test.ognisportoltre.it/passioni/ricerca_e_tecnologia" class="link-inverted">Ricerca e tecnologia</a></li>
+								<li><a href="https://test.ognisportoltre.it/passioni/linguaggio" class="link-inverted">Linguaggio</a></li>
+								<li><a href="https://test.ognisportoltre.it/passioni/progetti_nazionali" class="link-inverted">Progetti nazionali</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-5 col-md-5 col-md-offset-1 text-right m-centered">
+					<div class="row">
+						<div class="">
+							<h4 class="f-light m-centered">Scarica l’app OSO  |  Ogni Sport Oltre</h4>
+							<ul class="list-inline text-right m-centered">
+								<li><a href="http://voda.it/oso-ios"><img class="img-responsive" src="https://test.ognisportoltre.it/skins/oso/graphic/it_app_store.png" alt="App Store"></a></li>
+								<li class="no-padding-right"><a href="http://voda.it/oso-android"><img class="img-responsive" src="https://test.ognisportoltre.it/skins/oso/graphic/it_play_store.png" alt="App Store"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="">
+							<div class="col-sm-7 col-md-7">
+								<h4 class="text-left f-light m-centered">OSO  |  Ogni Sport Oltre<br>
+									Condividi l’iniziativa con i tuoi amici.</h4>
+							</div>
+							<div class="col-sm-5 col-md-5">
+								<h4>
+									<ul class="list-inline text-right m-centered">
+										<li><a href="https://www.facebook.com/FondazioneVodafoneItalia"><span class="icon-facebook f-size-2-5"></span></a></li>
+										<li><a href="https://twitter.com/fondvodafone"><span class="icon-twitter f-size-2-5"></span></a></li>
+																			</ul>
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container custom-container">
+	<div class="small-footer">
+		<div class="row">
+			<div class="col-sm-6 col-md-8">
+				<ul class="list-inline m-centered">
+					<li><a href="https://test.ognisportoltre.it/terms" class="link-inverted">Termini &amp; Condizioni</a></li>
+					<li><a href="https://test.ognisportoltre.it/documents/privacy.pdf" target="_blank" class="link-inverted">Privacy</a></li>
+					<li><a href="https://test.ognisportoltre.it/documents/cookies.pdf" target="_blank" class="link-inverted">Cookie</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<div class="pull-right m-centered"> <a href="https://test.ognisportoltre.it/contatti" class="btn btn-default btn-sm btn-white">Contatti</a> <a class="btn btn-default btn-outline btn-sm" role="button" data-toggle="collapse" href="#footer-info" aria-expanded="false" aria-controls="footer-info"><span class="sr-only">Espandi/Chiudi footer</span></a> </div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function () {
+		$('#footer-info').on('show.bs.collapse', function (e) {
+		    var $panel = $('.small-footer');
+		    $('html,body').animate({
+		        scrollTop: $panel.offset().top
+		    }, 500);
+		});
+		var currentImg = '';
+
+		 $('a > .partner').hover(function () {
+		        $(this).attr('src', function (i, src) {
+		            return src.replace('gray', 'color')
+		        })
+		    }, function () {
+		        $(this).attr('src', function (i, src) {
+		            return src.replace('color', 'gray')
+		        })
+		    })
+	});
+</script>
+
+			</div>
+
+
+	</div>
+
+
+		</div>
+
+<script type="text/javascript" src="https://test.ognisportoltre.it/common/js/lib/toastr.min.js"></script>
+
+<script type="text/javascript" src="https://test.ognisportoltre.it/require.min.js"></script>
+<script type="text/javascript">
+		require([TT_BASE_URL_JS + 'https://test.ognisportoltre.it/common/js/widgets/common.js?v=' + TAMTAMY_PREVENT_CACHE], function(common) {
+			window.ttRequireJSLoaded = true;
+			$(document).trigger("requirejs-ready");
+
+			require(['tamtamy/main'], function(main) {
+				// GI_FIXME: development purpose
+				window.ttController = main;
+			});
+		});
+</script>
+
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter/r/hsBwMj6iLmk.js?version=42#channel=f7029a7a3b280c&amp;origin=https%3A%2F%2Ftest.ognisportoltre.it" style="border: none;"></iframe></div></div></div></body>
+
+<!--
 <div class="row">
   <div class="col-md-12 alert alert-info">
     Hello, <span id="User"><%= @conn.params["user"] %></span>!
@@ -13,4 +1495,4 @@
       <li>Loading online users...</li>
     </ul>
   </div>
-</div>
+</div> -->
